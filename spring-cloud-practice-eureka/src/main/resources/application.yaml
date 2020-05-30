@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: spring-cloud-practice-eureka
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false # 因為本身是提供註冊服務的伺服器，不用向自身註冊
+    fetch-registry: false # 不用取得服務實例的註冊表進行快取
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
