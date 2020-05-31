@@ -1,0 +1,17 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: spring-cloud-practice-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+zuul:
+  routes:
+    feign-api:
+      path: /feign/** # 有問題
+      serviceId: spring-cloud-practice-feign
+    ribbon-api:
+      path: /ribbon/** # 有問題
+      serviceId: spring-cloud-practice-ribbon
