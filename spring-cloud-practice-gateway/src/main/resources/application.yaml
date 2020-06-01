@@ -1,0 +1,17 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: spring-cloud-practice-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 開啟通過 spring.application.name 前綴呼叫服務，http://{cloud gateway}[:{port}]/{spring.application.name}/{uri}
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
