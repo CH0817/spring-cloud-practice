@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: @profileActive@
+  application:
+    name: spring-cloud-practice-feign
+  cloud:
+    config:
+      uri: http://localhost:8088
+      label: master
+      profile: @profileActive@

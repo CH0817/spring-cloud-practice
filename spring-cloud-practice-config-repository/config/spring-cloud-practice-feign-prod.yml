@@ -1,8 +1,5 @@
 server:
-  port: 8084
-spring:
-  application:
-    name: spring-cloud-practice-feign
+  port: 8184
 eureka:
   client:
     service-url:
