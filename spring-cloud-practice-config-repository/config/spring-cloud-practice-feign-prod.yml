@@ -1,5 +1,8 @@
 server:
   port: 8184
+spring:
+  redis:
+    host: 192.168.56.1
 eureka:
   client:
     service-url:
@@ -7,3 +10,10 @@ eureka:
 feign:
   hystrix:
     enabled: true # 開啟 hystrix 熔斷器
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+my:
+  identify: TMD

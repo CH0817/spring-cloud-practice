@@ -1,5 +1,8 @@
 server:
   port: 8084
+spring:
+  redis:
+    host: 192.168.56.1
 eureka:
   client:
     service-url:
