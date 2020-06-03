@@ -1,0 +1,25 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: spring-cloud-practice-oauth2-server
+#  datasource:
+#    username: rex
+#    password: ji394su3
+#    url: jdbc:mysql://192.168.56.1:33660/spring_authorization
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 192.168.56.1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+logging:
+  level:
+    com:
+      rex:
+        authorization:
+          service:
+            jdbc:
+              rbac:
+                mapper: debug
