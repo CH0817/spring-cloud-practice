@@ -6,7 +6,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-// @MapperScan(basePackages = {"com.rex.spring.cloud.practice.oauth2.server.mapper"})
 public class Oauth2ServerApplication {
 
     public static void main(String[] args) {
