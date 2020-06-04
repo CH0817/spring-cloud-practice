@@ -1,0 +1,12 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: spring-cloud-practice-stream-consumer
+  rabbitmq:
+    host: 192.168.56.1
+  cloud:
+    stream:
+      bindings:
+        greetingChannel: # binding 名稱，必須與 HelloBinding 定義相同
+          destination: greetings # RabbitMQ 的 exchange 名稱
