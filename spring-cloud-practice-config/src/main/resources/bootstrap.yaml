@@ -10,3 +10,7 @@ spring:
           password: '{cipher}50173bd999f9f02014046cc3bf28b6408f925fdeeeddcde0f5a69ca2adbb96c3'
           default-label: master
           search-paths: spring-cloud-practice-config-repository/{application}
+management:
+  endpoint:
+    health:
+      show-details: always # health 顯示詳細信息
