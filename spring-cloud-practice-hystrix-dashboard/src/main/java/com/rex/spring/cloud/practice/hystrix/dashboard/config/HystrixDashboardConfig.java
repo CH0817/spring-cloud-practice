@@ -1,4 +1,4 @@
-package com.rex.spring.cloud.practice.feign.config;
+package com.rex.spring.cloud.practice.hystrix.dashboard.config;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

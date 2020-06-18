@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <artifactId>spring-cloud-practice-ribbon</artifactId>
+    <artifactId>spring-cloud-practice-hystrix-dashboard</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -25,15 +25,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-ribbon</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
         </dependency>
     </dependencies>
 
@@ -44,7 +36,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.rex.spring.cloud.practice.RibbonApplication</mainClass>
+                    <mainClass>com.rex.spring.cloud.practice.hystrix.dashboard.HystrixDashboardApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

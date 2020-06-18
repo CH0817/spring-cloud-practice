@@ -26,6 +26,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: refresh,hystrix.stream
 my:
   identify: XD
