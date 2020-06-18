@@ -3,18 +3,18 @@ server:
 spring:
   redis:
     host: 192.168.56.1
-security:
-  oauth2:
-    client:
-      client-id: pwd_client
-      client-secret: 123456
-      user-authorization-uri: http://localhost:8089/oauth/authorize
-      access-token-uri: http://localhost:8089/oauth/check_token
-    resource:
-      id: my_test
-      user-info-uri: user-info # 沒有這個啟動會錯誤，Missing tokenInfoUri and userInfoUri and there is no JWT verifier key
-    authorization:
-      check-token-access: http://localhost:8089/oauth/check_token
+#security:
+#  oauth2:
+#    client:
+#      client-id: pwd_client
+#      client-secret: 123456
+#      user-authorization-uri: http://localhost:8089/oauth/authorize
+#      access-token-uri: http://localhost:8089/oauth/check_token
+#    resource:
+#      id: my_test
+#      user-info-uri: user-info # 沒有這個啟動會錯誤，Missing tokenInfoUri and userInfoUri and there is no JWT verifier key
+#    authorization:
+#      check-token-access: http://localhost:8089/oauth/check_token
 eureka:
   client:
     service-url:

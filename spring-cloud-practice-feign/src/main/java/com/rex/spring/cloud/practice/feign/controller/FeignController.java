@@ -5,8 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -54,12 +52,12 @@ public class FeignController {
         return username + ", username is null: " + isNull + ", port: " + request.getServerPort() + ", session id: " + session.getId();
     }
 
-    @GetMapping("/token")
+    // @GetMapping("/token")
     // @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
-    public String token(Authentication authentication) {
-        authentication.getCredentials();
-        OAuth2AuthenticationDetails details = (OAuth2AuthenticationDetails) authentication.getDetails();
-        return details.getTokenValue();
-    }
+    // public String token(Authentication authentication) {
+    //     authentication.getCredentials();
+    //     OAuth2AuthenticationDetails details = (OAuth2AuthenticationDetails) authentication.getDetails();
+    //     return details.getTokenValue();
+    // }
 
 }
