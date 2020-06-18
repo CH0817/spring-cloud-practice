@@ -1,15 +1,15 @@
 spring:
   application:
     name: spring-cloud-practice-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/CH0817/spring-cloud-practice
-          username: '{cipher}5685ccd455950064510f0b5aecbd608b5295c7d1785277d1640714c634fffe388d9cb734e77056bcb94dd57a939451e9'
-          password: '{cipher}50173bd999f9f02014046cc3bf28b6408f925fdeeeddcde0f5a69ca2adbb96c3'
-          default-label: master
-          search-paths: spring-cloud-practice-config-repository/{application}
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/CH0817/spring-cloud-practice
+#          username: '{cipher}5685ccd455950064510f0b5aecbd608b5295c7d1785277d1640714c634fffe388d9cb734e77056bcb94dd57a939451e9'
+#          password: '{cipher}50173bd999f9f02014046cc3bf28b6408f925fdeeeddcde0f5a69ca2adbb96c3'
+#          default-label: master
+#          search-paths: spring-cloud-practice-config-repository/{application}
 management:
   endpoint:
     health:

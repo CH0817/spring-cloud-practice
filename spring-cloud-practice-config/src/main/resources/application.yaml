@@ -4,3 +4,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:/Projects/Java/spring-cloud-practice/spring-cloud-practice-config-repository/{application}
