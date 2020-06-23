@@ -1,0 +1,14 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: spring-cloud-practice-hystrix-turbine
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+turbine:
+  app-config: SPRING-CLOUD-PRACTICE-FEIGN,SPRING-CLOUD-PRACTICE-RIBBON # 配置 Eureka 中的 serviceId 列表，指定要監控的服務
+  aggregator:
+    cluster-config: default # 預設值 default
+  cluster-name-expression: '"default"'
