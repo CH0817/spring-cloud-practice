@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: spring-cloud-practice-oauth2-server
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
   redis:
     host: 192.168.56.1
 eureka:

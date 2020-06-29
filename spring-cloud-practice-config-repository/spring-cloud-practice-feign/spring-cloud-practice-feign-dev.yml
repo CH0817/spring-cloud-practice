@@ -3,6 +3,10 @@ server:
 spring:
   redis:
     host: 192.168.56.1
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
 #security:
 #  oauth2:
 #    client:
@@ -26,6 +30,6 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,hystrix.stream
+        include: health,info,refresh,hystrix.stream
 my:
   identify: XD

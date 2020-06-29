@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <artifactId>spring-cloud-practice-simple-service</artifactId>
+    <artifactId>spring-cloud-practice-admin</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -20,12 +20,8 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
             <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
         </dependency>
     </dependencies>
 
@@ -36,7 +32,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.rex.spring.cloud.practice.simple.service.SimpleServiceApplication</mainClass>
+                    <mainClass>com.rex.spring.cloud.practice.admin.AdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,8 +1,12 @@
 server:
-  port: 8090
+  port: 8092
 spring:
   application:
     name: spring-cloud-practice-hystrix
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
 eureka:
   client:
     service-url:

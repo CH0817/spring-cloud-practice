@@ -3,7 +3,16 @@ server:
 spring:
   application:
     name: spring-cloud-practice-simple-service
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8081/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,beans

@@ -5,6 +5,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:8081/eureka
 spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
   profiles:
     active: native
   cloud:

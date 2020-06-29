@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: spring-cloud-practice-zuul
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
 eureka:
   client:
     service-url:

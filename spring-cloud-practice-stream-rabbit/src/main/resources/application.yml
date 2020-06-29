@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: spring-cloud-practice-stream
+  boot:
+    admin:
+      client:
+        url: http://localhost:8899
   rabbitmq:
     host: 192.168.56.1
   cloud:
